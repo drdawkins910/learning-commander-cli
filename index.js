@@ -11,26 +11,31 @@ program
   .usage(' ');
   //.usage('encrypt|decrypt <password> <options>');
   
-//   program
-//   .command('encrypt <password>')
-//   .description('Encrypt a plain text password')
+   program
+   .command('encrypt <password>')
+  .description('Encrypt a plain text password')
 //   .option('-k, --key <string>', 'String|phrase Key to Use')
-//   .action(function (password, options) {
-//     debug('encrypt command');
-//     if( options.key == undefined ){
+   .action(function (password, options) {
+
 //       console.log();
-//       // console.log('  -k, --key option is required');
-      
-//       console.log('  ');
-//       process.exit(1);
-//     } else {
-//       let ciphertext = CryptoJS.AES.encrypt(password,options.key);
+
 //       console.log();
-//       console.log(' Encrypted Password: ' + ciphertext);
-//       console.log();
-//     }
+
  
-//   });
+   });
+
+   program
+   .command('sports ')
+  .description('list of record label sports')
+//   .option('-k, --key <string>', 'String|phrase Key to Use')
+   .action(function (password, options) {
+
+//       console.log();
+
+//       console.log();
+
+ 
+   });
 
 program.on('--help', function(){
     console.log();
