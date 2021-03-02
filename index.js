@@ -5,6 +5,10 @@ const colors   = require('colors');
 const debug   = require('debug')('commander:cli')
 const program = require('commander');
 const prompt  = require('prompt');
+const table = require('markdown-table')
+ 
+
+
 
 program
   .version('0.1.0', '-v, --version')
@@ -12,13 +16,22 @@ program
   //.usage('encrypt|decrypt <password> <options>');
   
    program
-   .command('encrypt <password>')
-  .description('Encrypt a plain text password')
+   .command('label')
+  .description('list of artist on record label')
 //   .option('-k, --key <string>', 'String|phrase Key to Use')
    .action(function (password, options) {
 
-//       console.log();
-
+    console.log();
+    console.log('Record label artist');
+     console.log();
+     console.log(
+table([
+  ['Artist', 'social'],
+  ['J cole', '@realcoleworld'],
+  ['BAS', '@bas'],
+  ['JID', '@JIDsv']
+])
+     );
 //       console.log();
 
  
@@ -30,9 +43,15 @@ program
 //   .option('-k, --key <string>', 'String|phrase Key to Use')
    .action(function (password, options) {
 
-//       console.log();
-
-//       console.log();
+    console.log();
+    console.log('Record label sports');
+     console.log();
+table([
+  ['Branch', 'Commit'],
+  ['master', '0123456789abcdef'],
+  ['staging', 'fedcba9876543210']
+])
+      console.log();
 
  
    });
