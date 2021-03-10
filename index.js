@@ -32,7 +32,8 @@ table([
   ['JID', '@JIDsv']
 ])
      );
-//       console.log();
+
+     console.log();
 
  
    });
@@ -45,12 +46,16 @@ table([
 
     console.log();
     console.log('Record label sports');
-     console.log();
+    console.log();
+    
+    console.log(
 table([
-  ['Branch', 'Commit'],
-  ['master', '0123456789abcdef'],
-  ['staging', 'fedcba9876543210']
+  ['Player name', 'Position'],
+  ['Dennis Smith Jr', 'PG'],
+  ['Chris Paul', 'PG'],
+  ['Steph Curry', 'PG']
 ])
+     );
       console.log();
 
  
