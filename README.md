@@ -11,10 +11,11 @@ npm install -g dreamville-cli
 
 ## Usage
 
-### Dreamville Sports
+### dreamville sports
 
-Athletes
+list of record label sports
 
-### Artist
+### dreamville label
 
-Description of command# learning-commander-cli
+list of artist on record label
+ 
